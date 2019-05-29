@@ -54,3 +54,19 @@ export function InputNameForm(props) {
     </Form>
   )
 }
+
+export function MobilePage() {
+  return (
+    <Jumbotron>
+      <h3>
+        Dear Mobile User,<br/>
+      </h3>
+      <p>
+        Please play <strong>Gobang</strong> on a Computer or Laptop.
+      </p>
+      <a src="https://ruihuasui.github.io/react-simple2048/">
+        Try <strong>Simple 2048</strong> Here
+      </a>
+    </Jumbotron>
+  );
+} 
