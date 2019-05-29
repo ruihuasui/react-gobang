@@ -1,10 +1,11 @@
 import React from 'react';
-import BoardGobang from './game-gobang/board.js'
+import GobangBoard from './game-gobang/board.js'
 import './App.css';
+import GobangGame from './game-gobang/game.js';
 
 function App() {
   return (
-    <BoardGobang/>
+    <GobangGame />
   );
 }
 
