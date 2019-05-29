@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/react-gobang/precache-manifest.1a89c53159c5c2b6711bb4d4c4b9680e.js"
+  "/react-gobang/precache-manifest.c803033200a05a922489ffa7e0a4f754.js"
 );
 
 self.addEventListener('message', (event) => {
