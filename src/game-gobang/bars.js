@@ -12,11 +12,11 @@ export function PlayerBar(props) {
                     (props.isBlack ? "" : "-active"):
                     (props.isBlack ? "-active" : "");
   const p2Active = (p1Active === "-active") ? "" : "-active";
+  const firstPlayer = props.firstPlayer ? props.player2 : props.player1;
   return (
     (props.nameEntered) ? 
       (<Col className="bottonContainer-left" lg="auto">
         <Card className="normalCards">
-
           <Card.Header>
             PLAYERS
             <Button variant="switch" onClick={()=>props.switchPlayer()}>
@@ -24,6 +24,10 @@ export function PlayerBar(props) {
             </Button>
           </Card.Header>
 
+          <Card.Text>
+            <strong>{firstPlayer}</strong> go first
+          </Card.Text>
+ 
           <ListGroup variant="flush">
             <ListGroup.Item className={"listItems"+p1Active}>
               {props.player1}<br/> {player1}

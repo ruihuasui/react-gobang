@@ -20,9 +20,8 @@ export function GameOver(props) {
 export function InputNameForm(props) {
   return (
     <Form>
-      <Image src="https://github.com/ruihuasui/react-gobang/blob/master/public/favicon.ico" rounded />
-      <Form.Text className="icon">
-        <h1>GoBang</h1>
+      <Form.Text >
+        <h1 className="icon">Gobang</h1>
       </Form.Text>
       <Form.Text className="text-muted">
           You can replace the default names with your prefered names!
@@ -44,8 +43,8 @@ export function InputNameForm(props) {
           onChange={props.setPlayer2Name}
         />
       </Form.Group>
-      <Button className="normalButtons" type="submit" onClick={props.submitNames}>
-        Set Names
+      <Button className="normalButtons" variant="flat" onClick={props.submitNames}>
+        Set Names and Begin!
       </Button>
     </Form>
   )
