@@ -12,8 +12,8 @@ export function PlayerBar(props) {
   const p2Active = (p1Active === "-active") ? "" : "-active";
   const firstPlayer = props.firstPlayer ? props.player2 : props.player1;
   return (
-    (props.nameEntered) ? 
-      (<Col className="bottonContainer-left" lg="auto">
+    (props.nameEntered) ? (
+      <Col className="bottonContainer-left" lg="auto">
         <Card className="normalCards">
           <Card.Header>
             PLAYERS
@@ -31,7 +31,7 @@ export function PlayerBar(props) {
             />
           </Card.Header>
         </Card>
-        
+
         <Card className="normalCards">
           <Card.Text >
             <strong>{firstPlayer}</strong> go first
@@ -46,17 +46,23 @@ export function PlayerBar(props) {
           </ListGroup>
         </Card>
       </Col>
-    ) : 
-    (
-    <Col className="bottonContainer-left" lg="auto">
-      <InputNameForm 
-        setPlayer1Name={props.setPlayer1Name}
-        setPlayer2Name={props.setPlayer2Name}
-        player1={props.player1}
-        player2={props.player2}
-        submitNames={props.submitNames}
-      />
-    </Col>)
+    ) : (
+      <Col className="bottonContainer-left" lg="auto">
+        <InputNameForm 
+          setPlayer1Name={props.setPlayer1Name}
+          setPlayer2Name={props.setPlayer2Name}
+          player1={props.player1}
+          player2={props.player2}
+          submitNames={props.submitNames}
+        />
+        <a 
+          style={{marginTop: '50px'}}
+          href="https://ruihuasui.github.io/react-simple2048/"
+        >
+          Try <strong>Simple 2048</strong> Here
+        </a>
+      </Col>
+    )
   );
 }
 
@@ -65,8 +71,8 @@ export function BottonBar(props) {
   const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before starting).</p>;
   const goBackText = <p>Click to go back 1 step</p>;
   return (
-    (props.nameEntered) ? 
-      (<Col className="bottonContainer-right" md="auto">
+    (props.nameEntered) ? (
+      <Col className="bottonContainer-right" md="auto">
         <TipButton 
           key_="left" value={modeText}
           onClick={()=>1}
@@ -85,8 +91,10 @@ export function BottonBar(props) {
           name={<p>Go Back<br/>One Step</p>}
           class_="normalButtons" variant="flat" size="xxl"
         />
-      </Col>) :
-      (<div></div>)
+      </Col>
+      ) : (
+        <div></div>
+      )
   );
 }
 
