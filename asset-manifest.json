@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-gobang/static/css/main.fa9b33a9.chunk.css",
-    "main.js": "/react-gobang/static/js/main.ad3f1fd9.chunk.js",
-    "main.js.map": "/react-gobang/static/js/main.ad3f1fd9.chunk.js.map",
+    "main.js": "/react-gobang/static/js/main.10b71951.chunk.js",
+    "main.js.map": "/react-gobang/static/js/main.10b71951.chunk.js.map",
     "runtime~main.js": "/react-gobang/static/js/runtime~main.7f7ca634.js",
     "runtime~main.js.map": "/react-gobang/static/js/runtime~main.7f7ca634.js.map",
     "static/js/2.34406a7a.chunk.js": "/react-gobang/static/js/2.34406a7a.chunk.js",
     "static/js/2.34406a7a.chunk.js.map": "/react-gobang/static/js/2.34406a7a.chunk.js.map",
     "index.html": "/react-gobang/index.html",
-    "precache-manifest.a462229788a82146f9bd77ffedbf8e73.js": "/react-gobang/precache-manifest.a462229788a82146f9bd77ffedbf8e73.js",
+    "precache-manifest.7b5d9bcb9cac84caa8fdcd6120a5d38a.js": "/react-gobang/precache-manifest.7b5d9bcb9cac84caa8fdcd6120a5d38a.js",
     "service-worker.js": "/react-gobang/service-worker.js",
     "static/css/main.fa9b33a9.chunk.css.map": "/react-gobang/static/css/main.fa9b33a9.chunk.css.map"
   }
