@@ -34,7 +34,7 @@ export function PlayerBar(props) {
 
         <Card className="normalCards">
           <Card.Text >
-            <strong>{firstPlayer}</strong> go first
+            <br/><strong>{firstPlayer}</strong> go first
           </Card.Text>
           <ListGroup variant="flush">
             <ListGroup.Item className={"listItems"+p1Active}>
