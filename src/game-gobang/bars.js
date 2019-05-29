@@ -23,6 +23,12 @@ export function PlayerBar(props) {
               name="Switch Player"
               variant="switch"
             />
+            <TipButton 
+              key_="right" value="Click to change the names!"
+              onClick={()=>props.resetNames()}
+              name="Reset Names"
+              variant="switch"
+            />
           </Card.Header>
 
           <Card.Text >
@@ -45,6 +51,8 @@ export function PlayerBar(props) {
       <InputNameForm 
         setPlayer1Name={props.setPlayer1Name}
         setPlayer2Name={props.setPlayer2Name}
+        player1={props.player1}
+        player2={props.player2}
         submitNames={props.submitNames}
       />
     </Col>)

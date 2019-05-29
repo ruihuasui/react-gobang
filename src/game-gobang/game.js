@@ -26,6 +26,7 @@ export default class GobangGame extends Component {
     this.winner = '';
 
     this._startGame = this._startGame.bind(this);
+    this._resetNames = this._resetNames.bind(this);
     this._setPlayer1Name = this._setPlayer1Name.bind(this);
     this._setPlayer2Name = this._setPlayer2Name.bind(this);
     this._updateMatrix = this._updateMatrix.bind(this);
@@ -88,6 +89,12 @@ export default class GobangGame extends Component {
     this.winner = '';
   }
 
+  _resetNames() {
+    this.setState({
+      nameEntered : false,
+    });
+  }
+
   _goBack() {
     const index = this.state.currStep - 1;
     if (index <= 0) return;
@@ -123,6 +130,7 @@ export default class GobangGame extends Component {
           setPlayer1Name={this._setPlayer1Name}
           setPlayer2Name={this._setPlayer2Name}
           submitNames={this._startGame}
+          resetNames={this._resetNames}
         />
         <GobangBoard 
           matrix={this.state.matrix} 

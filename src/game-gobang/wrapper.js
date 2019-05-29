@@ -32,7 +32,7 @@ export function InputNameForm(props) {
         <Form.Label>Player 1</Form.Label>
         <Form.Control 
           placeholder="Enter the name of player1" 
-          defaultValue="Player 1"
+          defaultValue={props.player1}
           onChange={props.setPlayer1Name}
         />
       </Form.Group>
@@ -41,7 +41,7 @@ export function InputNameForm(props) {
         <Form.Label>Player 2</Form.Label>
         <Form.Control 
           placeholder="Enter the name of player2" 
-          defaultValue="Player 2"
+          defaultValue={props.player2}
           onChange={props.setPlayer2Name}
         />
       </Form.Group>
