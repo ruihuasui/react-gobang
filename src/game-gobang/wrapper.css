@@ -45,3 +45,9 @@
   justify-content: center;
   text-align: center;
 }
+.simple2048Link {
+  background-color: white;
+  width: 200px;
+  border: 2px solid white;
+  border-radius: 5px;
+}

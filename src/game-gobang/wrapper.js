@@ -64,7 +64,7 @@ export function MobilePage() {
       <p>
         Please play <strong>Gobang</strong> on a Computer or Laptop.
       </p>
-      <a href="https://ruihuasui.github.io/react-simple2048/">
+      <a className="simple2048Link" href="https://ruihuasui.github.io/react-simple2048/">
         Try <strong>Simple 2048</strong> Here
       </a>
     </Jumbotron>

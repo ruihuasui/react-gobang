@@ -52,8 +52,8 @@ export function PlayerBar(props) {
 }
 
 export function BottonBar(props) {
-  const modeText = 'Sorry the Computer-User mode is in-progress.';
-  const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before first).</p>;
+  const modeText = 'Sorry the Computer vs. User mode is in-progress.';
+  const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before starting).</p>;
   const goBackText = <p>Click to go back 1 step</p>;
   return (
     (props.nameEntered) ? 
