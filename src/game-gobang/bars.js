@@ -30,11 +30,12 @@ export function PlayerBar(props) {
               variant="switch"
             />
           </Card.Header>
-
+        </Card>
+        
+        <Card className="normalCards">
           <Card.Text >
             <strong>{firstPlayer}</strong> go first
           </Card.Text>
- 
           <ListGroup variant="flush">
             <ListGroup.Item className={"listItems"+p1Active}>
               {props.player1}<br/> {player1}
