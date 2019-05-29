@@ -68,18 +68,14 @@ export default class GobangGame extends Component {
 
   _switchPlayer() {
     const new1stPlayer = this.state.firstPlayer ? 0 : 1;
-    const isBlack_ = this.state.isBlack;
     this.setState({
-      isBlack     : !isBlack_,
       firstPlayer : new1stPlayer,
     });
   }
 
   _newGame() {
-    const isBlack_ = this.state.firstPlayer ? false : true;
     this.setState({
       matrix  : createMatrx(15, 15, 0),
-      isBlack : isBlack_,
       history : [
         {
           matrix: createMatrx(15, 15, 0),
