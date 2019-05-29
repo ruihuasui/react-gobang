@@ -76,6 +76,7 @@ export default class GobangGame extends Component {
   _newGame() {
     this.setState({
       matrix  : createMatrx(15, 15, 0),
+      isBlack : true,
       history : [
         {
           matrix: createMatrx(15, 15, 0),
