@@ -1,11 +1,13 @@
 import React from 'react';
-import GobangBoard from './game-gobang/board.js'
 import './App.css';
 import GobangGame from './game-gobang/game.js';
+import { Col } from 'react-bootstrap';
 
 function App() {
   return (
-    <GobangGame />
+    <Col>
+      <GobangGame />
+    </Col>
   );
 }
 
