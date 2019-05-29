@@ -57,7 +57,7 @@ export function InputNameForm(props) {
 
 export function MobilePage() {
   return (
-    <Jumbotron>
+    <Jumbotron className="mobilePage_" fluid>
       <h3>
         Dear Mobile User,<br/>
       </h3>
