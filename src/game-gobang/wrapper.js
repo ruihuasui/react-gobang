@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import { Jumbotron, Form, Button, Image } from 'react-bootstrap';
+import React from 'react';
+import { Jumbotron, Form, Button } from 'react-bootstrap';
+import { TipButton } from './bars.js'
 import './wrapper.css';
 
 export function GameOver(props) {
@@ -18,6 +19,7 @@ export function GameOver(props) {
 }
 
 export function InputNameForm(props) {
+  const submitTips = <p>Click to submit the names and <strong>Begin the Game!</strong></p>;
   return (
     <Form>
       <Form.Text >
@@ -43,9 +45,12 @@ export function InputNameForm(props) {
           onChange={props.setPlayer2Name}
         />
       </Form.Group>
-      <Button className="normalButtons" variant="flat" onClick={props.submitNames}>
-        Set Names and Begin!
-      </Button>
+      <TipButton 
+        key_="bottom" value={submitTips}
+        onClick={()=>props.submitNames()}
+        name="Set Names and Begin!"
+        class_="normalButtons" variant="flat" 
+      />
     </Form>
   )
 }

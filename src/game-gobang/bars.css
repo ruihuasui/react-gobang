@@ -34,6 +34,8 @@
     font-size: 13px;
     background-color: rgba(1, 82, 15, 0.712);
     color: white;
+    font-weight: normal;
+    width: 110px;
   }
 
 .normalCards {

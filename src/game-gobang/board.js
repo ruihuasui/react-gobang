@@ -37,8 +37,8 @@ function BoardRow(props) {
         {y: 10, type: props.type},
         {y: 11, type: props.type},
         {y: 12, type: center + props.type},
-        {y: 13, type: "-right" + props.type},
-        
+        {y: 13, type: props.type},
+        {y: 14, type: "-right" + props.type},
       ].map(placement => (
         <Box 
           matrix={props.matrix} 
@@ -62,7 +62,6 @@ export default class GobangBoard extends React.Component {
             winner={this.props.winner}
           />
           {[{type: "-top", row: "0"}, 
-            {type: "", row:  "0"},
             {type: "", row:  "1"},
             {type: "", row:  "2"},
             {type: "", row:  "3"},
