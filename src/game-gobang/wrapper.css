@@ -1,0 +1,19 @@
+.gameOverWrapper {
+  position: absolute;
+  margin-left: -15px;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  opacity: .8;
+  background-color: rgb(61, 61, 59);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.textArea {
+  color: white;
+  background-color:rgb(61, 61, 59);
+}

@@ -1,0 +1,50 @@
+.bottonContainer-right {
+  min-width: 100px;
+  height: 400px;
+  margin-left: 20px;
+  background-color: rgba(0, 0, 0, 0.192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+  
+
+
+.bottonContainer-left {
+  min-width: 100px;
+  height: 400px;
+  margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.192);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;}
+
+.normalButtons {
+  width: 150px;
+  margin: 10px;
+  font-weight: bold;}
+  .btn-flat {
+    background-color: rgb(0, 128, 21);
+    color: white;}
+  .btn-xxl {
+    padding: 1rem 1.5rem;
+    font-size: 1rem;}
+  .btn-switch {
+    font-size: 13px;
+    background-color: rgba(1, 82, 15, 0.712);
+    color: white;
+  }
+
+.normalCards {
+  width: 150px;
+  background-color: rgb(0, 128, 21);
+  font-weight: bold;
+  text-align: center;}
+  .listItems {
+    background-color: rgba(151, 156, 144, 0.397);}
+  .listItems-active {
+    color: black;
+    height: 100px;
+    font-size: 1.5rem;
+  }

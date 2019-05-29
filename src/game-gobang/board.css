@@ -1,0 +1,70 @@
+.board {
+  width: 620px;
+  min-height: 620px;
+  margin-top: 20px;
+  background: solid #0000003d;
+  border: #0000003d solid 10px;
+  border-radius: 5px;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/box2.png');
+  background-position: -40px -40px;}
+  .box-left {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/box2.png');
+    background-position: -10px -40px;
+  }
+  .box-right {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/box2.png');
+    background-position: -130px -40px;
+  }
+  .box-top {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/box2.png');
+    background-position: -40px -10px;}
+    .box-left-top {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/box2.png');
+      background-position: -10px -10px;}
+    .box-right-top {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/box2.png');
+      background-position: -130px -10px;
+  }
+  .box-bottom {
+    width: 40px;
+    height: 40px;
+    background-image: url('../images/box2.png');
+    background-position: -40px -70px;}
+    .box-left-bottom {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/box2.png');
+      background-position: -10px -70px;}
+    .box-right-bottom {
+      width: 40px;
+      height: 40px;
+      background-image: url('../images/box2.png');
+      background-position: -130px -70px;
+  }
+  .box-center {
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/box2.png');
+  background-position: -100px -40px;
+}
+
+.piece {
+  font-size: 32px;
+  margin-left: -11px;
+  margin-top: -3px;
+}
