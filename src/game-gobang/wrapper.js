@@ -20,12 +20,16 @@ export function GameOver(props) {
     (<div></div>)
   );
 }
+
 export function InputNameForm(props) {
   const submitTips = <p>Click to submit the names and <strong>Begin the Game!</strong></p>;
   return (
-    <Form style={{width: width_, alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
+    <Form className="inputNameForm" style={{width: width_}}>
       <Form.Text >
         <h1 className="icon">Gobang</h1>
+        <h4 className="githubLink">You can view the source code{' '} 
+          <a href="https://github.com/ruihuasui/react-gobang">here</a>
+        </h4>
       </Form.Text>
       <Form.Text className="text-muted">
           You can replace the default names with your prefered names!
