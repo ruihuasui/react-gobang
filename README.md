@@ -29,7 +29,7 @@ $ npm install react-bootstrap bootstrap
 ```
 $ npm install --save react-router-dom
 ```
-5. run on the local host
+5. run on the [local host](http://localhost:3000/react-gobang/)
 ```
 $ npm start
 ```
