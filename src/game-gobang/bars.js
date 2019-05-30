@@ -64,7 +64,7 @@ export function BottonBar(props) {
   const timerText = <p> Click <strong>New Game</strong> Botton below to countdown</p>
   const modeText = 'Sorry the Computer vs. User mode is in-progress.';
   const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before starting).</p>;
-  const goBackText = <p>Click to go back 1 step</p>;
+  const goBackText = 'Click to go back one step';
   var color_ = props.seconds ? 'black' : 'red';
   return (
     (props.nameEntered) ? (
