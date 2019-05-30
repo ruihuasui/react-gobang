@@ -13,20 +13,24 @@ on computers or laptops!
 Part of the stylesheets is cloned from [classLfz/gomoku-react](https://github.com/classLfz/gomoku-react).
 
 ## Build
+1. clone the repository
 ```
-# clone the repository
 $ git clone https://github.com/ruihuasui/react-gobang.git react-gobang & cd react-gobang
-
-# setup the react packages
+```
+2. setup the react packages
+```
 $ npm install
-
-# install react-bootstrap
+```
+3. install react-bootstrap
+```
 $ npm install react-bootstrap bootstrap
-
-# intall react-router-dom
+```
+4. intall react-router-dom
+```
 $ npm install --save react-router-dom
-
-# run on the local host
+```
+5. run on the local host
+```
 $ npm start
 ```
 
