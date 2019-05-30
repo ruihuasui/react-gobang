@@ -1,4 +1,4 @@
-## Gobang 
+# Gobang 
 A simple chess game built for learning [React-bootstrap](https://react-bootstrap.github.io/).<br/>
 
 Enjoy the [Gobang Game](http://ruihuasui.github.io/react-gobang/) 
