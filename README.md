@@ -13,15 +13,25 @@ on computers or laptops!
 Part of the stylesheets is cloned from [classLfz/gomoku-react](https://github.com/classLfz/gomoku-react).
 
 ## Build
+1. clone the repository
 ```
-# clone the repository
-git clone https://github.com/ruihuasui/react-gobang.git react-gobang & cd react-gobang
-
-# setup the react packages
-npm install
-
-# run on local host
-npm start
+$ git clone https://github.com/ruihuasui/react-gobang.git && cd react-gobang
+```
+2. setup the react packages
+```
+$ npm install
+```
+3. install react-bootstrap
+```
+$ npm install react-bootstrap bootstrap
+```
+4. intall react-router-dom
+```
+$ npm install --save react-router-dom
+```
+5. run on the local host: http://localhost:3000/react-gobang/
+```
+$ npm start
 ```
 
 ## Player v.s. AI version
