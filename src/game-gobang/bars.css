@@ -20,11 +20,7 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
-  -webkit-transition: display 600ms;
-  transition: display 600ms;}
-  .bottonContainer-left:double-button {
-    display: none;
-  }
+  transition: 300ms linear all;}
 
 .normalButtons {
   width: 150px;
