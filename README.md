@@ -5,6 +5,6 @@ Enjoy the [Gobang Game](http://ruihuasui.github.io/react-gobang/)
 on computers or laptops!
 
 ## Screenshots
-<image width="431px" height="305px" src="https://github.com/ruihuasui/_files/blob/master/gobang/screenshot.png"/><br/>
+<image width="431px" height="305px" src="https://github.com/ruihuasui/_files/blob/master/gobang/screenshot.png" href="http://ruihuasui.github.io/react-gobang/"/><br/>
 
 
