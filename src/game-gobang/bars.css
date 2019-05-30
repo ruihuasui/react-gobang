@@ -41,7 +41,8 @@
     color: black;
     background-color: white;
     height: 100px;
-    font-size: 16px;}
+    font-size: 16px;
+    padding: 0.7rem 0.7rem;}
 
 .normalCards {
   width: 150px;
