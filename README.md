@@ -22,3 +22,6 @@ npm install
 # run on local host
 npm start
 ```
+
+## Player v.s. AI version
+In progress ...
