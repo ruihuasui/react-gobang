@@ -64,7 +64,7 @@ export function PlayerBar(props) {
 }
 
 export function BottonBar(props) {
-  const timerText = <p> Click <strong>New Game</strong> Botton below to countdown</p>
+  const timerText = 'Click to reset'
   const modeText = 'Sorry the Computer vs. User mode is in-progress.';
   const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before starting).</p>;
   const goBackText = 'Click to go back one step';
