@@ -55,12 +55,6 @@ export function PlayerBar(props) {
           player2={props.player2}
           submitNames={props.submitNames}
         />
-        <a 
-          style={{marginTop: '50px'}}
-          href="https://ruihuasui.github.io/react-simple2048/"
-        >
-          Try <strong>Simple 2048</strong> Here
-        </a>
       </Col>
     )
   );
