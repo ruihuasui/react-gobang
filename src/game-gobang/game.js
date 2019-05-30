@@ -149,7 +149,6 @@ export default class GobangGame extends Component {
       const firstPlayer = this.state.firstPlayer ? this.state.player2 : this.state.player1;
       const secondPlayer = this.state.firstPlayer ? this.state.player1 : this.state.player2;
       this.winner = this.state.currStep % 2 === 1 ? firstPlayer : secondPlayer;
-      clearInterval(this.timer);
     }
 
     return (
