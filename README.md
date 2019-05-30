@@ -1,7 +1,7 @@
 A simple game built for learning [React-bootstrap](https://react-bootstrap.github.io/).<br/>
 
 Enjoy the [Gobang Game](http://ruihuasui.github.io/react-gobang/) 
-<image src="https://github.com/ruihuasui/react-gobang/blob/master/public/favicon.ico"/>
+<image src="https://github.com/ruihuasui/react-gobang/blob/master/src/images/logo.png"/>
 on computers or laptops!
 
 ## Screenshot
