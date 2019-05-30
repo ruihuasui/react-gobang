@@ -75,7 +75,7 @@ export function BottonBar(props) {
         <TipButton 
           key_="left" value={timerText}
           onClick={()=>1}
-          name={<p style={{color: color_}}>Time Remain<br/><h2>{props.seconds}</h2></p>}
+          name={<p style={{color: color_}}>Time Remain<br/><h2>{props.seconds}s</h2></p>}
           class_="normalButtons" variant="white" size="xxl"
         />
         <TipButton 
