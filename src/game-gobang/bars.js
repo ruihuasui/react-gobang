@@ -90,7 +90,7 @@ export function BottonBar(props) {
         <TipButton 
           key_="left" value={goBackText}
           onClick={()=>props.goBack()}
-          name={<p>Go Back<br/>One Step</p>}
+          name={'Go Back'}
           class_="normalButtons" variant="flat" size="xxl"
         />
       </Col>

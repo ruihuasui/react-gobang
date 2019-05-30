@@ -48,7 +48,7 @@ export function InputNameForm(props) {
       <TipButton 
         key_="bottom" value={submitTips}
         onClick={()=>props.submitNames()}
-        name="Set Names and Begin!"
+        name="Submit Names"
         class_="normalButtons" variant="flat" 
       />
     </Form>
