@@ -10,6 +10,7 @@ export default class GobangGame extends Component {
     super(props);
     this.state={
       matrix      : createMatrx(15, 15, 0),
+      active      : createMatrx(15, 15, 0),
       isBlack     : true,
       firstPlayer : 0,
       history     : [
@@ -21,7 +22,7 @@ export default class GobangGame extends Component {
       player1  : 'Player 1',
       player2  : 'Player 2',
       nameEntered : false,
-      seconds  : 60
+      seconds  : 60,
     }
     this.gameOver = false;
     this.winner = '';
@@ -74,12 +75,15 @@ export default class GobangGame extends Component {
     const index = this.state.currStep + 1;
     const history_ = this.state.history.slice(0, index);
     const isBlack_ = this.state.isBlack;
+    const active_ = createMatrx(15, 15, 0);
+    active_[x][y] = '🔴'
     if (matrix_[x][y]) return;
     matrix_[x][y] = isBlack_ ? '⚫️' : '⚪️';
 
     this.setState({
       matrix  : matrix_,
       isBlack : !isBlack_,
+      active  : active_,
       history : history_.concat([
         {
           matrix: matrix_
@@ -101,6 +105,7 @@ export default class GobangGame extends Component {
   _newGame() {
     this.setState({
       matrix  : createMatrx(15, 15, 0),
+      active  : createMatrx(15, 15, 0),
       isBlack : true,
       history : [
         {
@@ -131,6 +136,7 @@ export default class GobangGame extends Component {
       currStep : index,
       history  : history_,
       matrix   : matrix_,
+      active   : createMatrx(15, 15, 0),
       isBlack  : isBlack_,
     });
     this.startTimer();
@@ -161,6 +167,7 @@ export default class GobangGame extends Component {
         />
         <GobangBoard 
           matrix={this.state.matrix} 
+          active={this.state.active}
           updateMatrix={this._updateMatrix}
           gameOver={this.gameOver}
           winner={this.winner}

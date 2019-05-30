@@ -1,6 +1,7 @@
 import React from 'react';
 import { Col, Row, } from 'react-bootstrap';
 import {GameOver} from './wrapper.js'
+import {createMatrx} from './matrix.js'
 import './board.css';
 
 
@@ -10,11 +11,18 @@ function Box(props) {
   const matrix = props.matrix;
   const x_ = props.position.x, y_ = props.position.y;
   const content = matrix[x_][y_] ? matrix[x_][y_] : '';
+  const active_ = props.active[x_][y_] ? props.active[x_][y_] : '';
   return (
-    <Col className={className_} onClick={() => props.updateMatrix(x_, y_)}>
+    <Col 
+      className={className_} 
+      onClick={() => {props.updateMatrix(x_, y_);}}
+    >
       <div className="piece">
         {content}
       </div>
+      <div className="piece-active">
+        {active_}
+      </div> 
     </Col>
   );
 }
@@ -42,6 +50,7 @@ function BoardRow(props) {
       ].map(placement => (
         <Box 
           matrix={props.matrix} 
+          active={props.active}
           position={{x: row, y: placement.y}} 
           updateMatrix={props.updateMatrix} 
           type={placement.type}/>
@@ -79,6 +88,7 @@ export default class GobangBoard extends React.Component {
           ].map(placement => (
             <BoardRow 
               matrix={this.props.matrix} 
+              active={this.props.active}
               updateMatrix={this.props.updateMatrix} 
               type={placement.type} row={placement.row}
             />

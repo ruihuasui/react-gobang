@@ -66,5 +66,10 @@
 .piece {
   font-size: 32px;
   margin-left: -11px;
-  margin-top: -3px;
-}
+  margin-top: -3px;}
+  .piece-active {
+    position: absolute;
+    margin-top: -32px;
+    z-index: 1;
+    font-size: 10px;
+  }
