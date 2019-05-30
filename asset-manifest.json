@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/react-gobang/static/css/main.3f0bdd5b.chunk.css",
-    "main.js": "/react-gobang/static/js/main.66c08d8c.chunk.js",
-    "main.js.map": "/react-gobang/static/js/main.66c08d8c.chunk.js.map",
+    "main.css": "/react-gobang/static/css/main.cb4a862c.chunk.css",
+    "main.js": "/react-gobang/static/js/main.0eed15d9.chunk.js",
+    "main.js.map": "/react-gobang/static/js/main.0eed15d9.chunk.js.map",
     "runtime~main.js": "/react-gobang/static/js/runtime~main.7f7ca634.js",
     "runtime~main.js.map": "/react-gobang/static/js/runtime~main.7f7ca634.js.map",
     "static/js/2.22321cf4.chunk.js": "/react-gobang/static/js/2.22321cf4.chunk.js",
     "static/js/2.22321cf4.chunk.js.map": "/react-gobang/static/js/2.22321cf4.chunk.js.map",
     "index.html": "/react-gobang/index.html",
-    "precache-manifest.7642147da75ab66b83e9943f11f7696b.js": "/react-gobang/precache-manifest.7642147da75ab66b83e9943f11f7696b.js",
+    "precache-manifest.1544a64d4832eb6e1039e1db717105cb.js": "/react-gobang/precache-manifest.1544a64d4832eb6e1039e1db717105cb.js",
     "service-worker.js": "/react-gobang/service-worker.js",
-    "static/css/main.3f0bdd5b.chunk.css.map": "/react-gobang/static/css/main.3f0bdd5b.chunk.css.map"
+    "static/css/main.cb4a862c.chunk.css.map": "/react-gobang/static/css/main.cb4a862c.chunk.css.map"
   }
 }
