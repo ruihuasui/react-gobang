@@ -8,16 +8,18 @@ const width_ = Math.floor(window.innerWidth) + 'px';
 
 export function GameOver(props) {
   return (
-    (props.gameOver) ? 
-    (<div className="gameOverWrapper">
-      <Jumbotron className="textArea">
-        <h1>The Winner is<br/><strong>{props.winner}</strong>!</h1>
-        <p>
-          - Please Start A New Game to Continue - 
-        </p>
-      </Jumbotron>
-    </div>) :
-    (<div></div>)
+    (props.gameOver) ? (
+      <div className="gameOverWrapper">
+        <Jumbotron className="textArea">
+          <h1>The Winner is<br/><strong>{props.winner}</strong>!</h1>
+          <p>
+            - Please Start A New Game to Continue - 
+          </p>
+        </Jumbotron>
+      </div>
+    ) : (
+      <div></div>
+    )
   );
 }
 
@@ -31,9 +33,11 @@ export function InputNameForm(props) {
           <a href="https://github.com/ruihuasui/react-gobang">here</a>
         </h4>
       </Form.Text>
+
       <Form.Text className="text-muted">
           You can replace the default names with your prefered names!
       </Form.Text>
+
       <Form.Group style={{width: halfWidth_}}>
         <Form.Label>Player 1</Form.Label>
         <Form.Control 
@@ -42,6 +46,7 @@ export function InputNameForm(props) {
           onChange={props.setPlayer1Name}
         />
       </Form.Group>
+
       <Form.Group style={{width: halfWidth_}}>
         <Form.Label>Player 2</Form.Label>
         <Form.Control 
@@ -50,6 +55,7 @@ export function InputNameForm(props) {
           onChange={props.setPlayer2Name}
         />
       </Form.Group>
+
       <TipButton 
         key_="bottom" value={submitTips}
         onClick={()=>props.submitNames()}

@@ -8,14 +8,12 @@ export default function App (){
   return (
     <Router>
       <div>
-        <Navbar bg="dark" variant="dark" style={{zIndex: 1, boxShadow: '5px 5px 10px rgba(0, 0, 0, 0.514)'}}>
+        <Navbar bg="dark" variant="dark" className="bar">
           <Navbar.Brand href="/react-gobang/">
-            <img
-              className="logo"
-              href="./images/logo.png"
-            />
+            <img className="logo"/>
             {' '}Gobang
           </Navbar.Brand>
+          
           <Nav className="mr-auto">
             <Nav.Link href="/react-gobang/">Gobang</Nav.Link>
             <Nav.Link href="https://ruihuasui.github.io/react-simple2048/">Simple 2048</Nav.Link>
@@ -25,6 +23,7 @@ export default function App (){
             <Button variant="outline-info">Search</Button>
           </Form>
         </Navbar>
+
         <Route exact path="/react-gobang/" component={GobangPage} />
       </div>
     </Router>

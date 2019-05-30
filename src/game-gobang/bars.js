@@ -48,6 +48,7 @@ export function PlayerBar(props) {
           </ListGroup>
         </Card>
       </Col>
+      
       {/* Input name bar */}
       <Col className="bottonContainer-left" lg="auto" style={{display: displaySetNames}}>
         <InputNameForm 

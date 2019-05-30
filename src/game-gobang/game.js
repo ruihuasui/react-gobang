@@ -57,17 +57,17 @@ export default class GobangGame extends Component {
     });
   }
   
-  _startGame() {
-    this.setState({nameEntered: true});
-    this.startTimer();
-  }
-
   _setPlayer1Name(event) {
     this.setState({player1: event.target.value});
   }
 
   _setPlayer2Name(event) {
     this.setState({player2: event.target.value});
+  }
+
+  _startGame() {
+    this.setState({nameEntered: true});
+    this.startTimer();
   }
 
   _updateMatrix(x, y) {
@@ -102,6 +102,13 @@ export default class GobangGame extends Component {
     this.startTimer();
   }
 
+  _resetNames() {
+    this.setState({
+      nameEntered : false,
+    });
+    this.startTimer();
+  }
+
   _newGame() {
     this.setState({
       matrix  : createMatrx(15, 15, 0),
@@ -116,13 +123,6 @@ export default class GobangGame extends Component {
     });
     this.gameOver = false;
     this.winner = '';
-    this.startTimer();
-  }
-
-  _resetNames() {
-    this.setState({
-      nameEntered : false,
-    });
     this.startTimer();
   }
 
@@ -143,6 +143,7 @@ export default class GobangGame extends Component {
   }
 
   render() {
+    // check if there is a winner
     const result = checkWin(this.state.matrix);
     if (result.win) {
       this.gameOver = true;

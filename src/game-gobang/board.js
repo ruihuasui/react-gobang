@@ -17,12 +17,8 @@ function Box(props) {
       className={className_} 
       onClick={() => {props.updateMatrix(x_, y_);}}
     >
-      <div className="piece">
-        {content}
-      </div>
-      <div className="piece-active">
-        {active_}
-      </div> 
+      <div className="piece">{content}</div>
+      <div className="piece-active">{active_}</div> 
     </Col>
   );
 }
