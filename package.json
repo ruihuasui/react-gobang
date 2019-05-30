@@ -34,8 +34,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "http://ruihuasui.github.io/react-gobang/",
   "devDependencies": {
     "gh-pages": "^2.0.1"
-  }
+  },
+  "homepage": "http://ruihuasui.github.io/react-gobang/"
 }
