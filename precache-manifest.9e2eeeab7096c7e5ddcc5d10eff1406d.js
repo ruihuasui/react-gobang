@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "09a29c817da445c1279391611c4bd709",
+    "revision": "75a001675188e3ff8ec3d61eb1a119e0",
     "url": "/react-gobang/index.html"
   },
   {
-    "revision": "6e846bcbf6db3b1ff66c",
+    "revision": "4352ec4581fa93180bae",
     "url": "/react-gobang/static/css/main.e7f62a5e.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-gobang/static/js/2.22321cf4.chunk.js"
   },
   {
-    "revision": "6e846bcbf6db3b1ff66c",
-    "url": "/react-gobang/static/js/main.3470c2ed.chunk.js"
+    "revision": "4352ec4581fa93180bae",
+    "url": "/react-gobang/static/js/main.dd26309d.chunk.js"
   },
   {
     "revision": "707bbb60d65688b688f2",
