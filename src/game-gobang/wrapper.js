@@ -3,6 +3,9 @@ import { Jumbotron, Form } from 'react-bootstrap';
 import { TipButton } from './bars.js';
 import './wrapper.css';
 
+const halfWidth_ = Math.floor(window.innerWidth / 2) + 'px';
+const width_ = Math.floor(window.innerWidth) + 'px';
+
 export function GameOver(props) {
   return (
     (props.gameOver) ? 
@@ -20,14 +23,14 @@ export function GameOver(props) {
 export function InputNameForm(props) {
   const submitTips = <p>Click to submit the names and <strong>Begin the Game!</strong></p>;
   return (
-    <Form>
+    <Form style={{width: width_, alignItems: 'center', display: 'flex', flexDirection: 'column'}}>
       <Form.Text >
         <h1 className="icon">Gobang</h1>
       </Form.Text>
       <Form.Text className="text-muted">
           You can replace the default names with your prefered names!
       </Form.Text>
-      <Form.Group >
+      <Form.Group style={{width: halfWidth_}}>
         <Form.Label>Player 1</Form.Label>
         <Form.Control 
           placeholder="Enter the name of player1" 
@@ -35,8 +38,7 @@ export function InputNameForm(props) {
           onChange={props.setPlayer1Name}
         />
       </Form.Group>
-    
-      <Form.Group >
+      <Form.Group style={{width: halfWidth_}}>
         <Form.Label>Player 2</Form.Label>
         <Form.Control 
           placeholder="Enter the name of player2" 

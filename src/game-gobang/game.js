@@ -179,6 +179,7 @@ export default class GobangGame extends Component {
           newGame={this._newGame}
           goBack={this._goBack}
           seconds={this.state.seconds}
+          resetTimer={this.startTimer}
         />
       </Row>
     );
