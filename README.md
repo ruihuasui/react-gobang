@@ -11,4 +11,14 @@ on computers or laptops!
 
 Part of the stylesheets is cloned from [classLfz/gomoku-react](https://github.com/classLfz/gomoku-react).
 
+## Build
+```
+# clone the repository
+git clone https://github.com/ruihuasui/react-gobang.git react-gobang & cd react-gobang
 
+# setup the react packages
+npm install
+
+# run on local host
+npm start
+```
