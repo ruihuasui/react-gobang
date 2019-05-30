@@ -20,7 +20,7 @@ export function GameOver(props) {
 export function InputNameForm(props) {
   const submitTips = <p>Click to submit the names and <strong>Begin the Game!</strong></p>;
   return (
-    <Form style={{width: '200px'}}>
+    <Form>
       <Form.Text >
         <h1 className="icon">Gobang</h1>
       </Form.Text>

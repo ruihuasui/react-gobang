@@ -21,7 +21,8 @@
 .icon {
   text-align: center;
   font-weight: bold;
-  font-size: 100px;
+  width: 900px;
+  font-size: 150px;
   color: rgb(30, 172, 77);
   text-shadow: 5px 5px 10px black;
 }
