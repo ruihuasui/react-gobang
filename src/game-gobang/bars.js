@@ -67,12 +67,19 @@ export function PlayerBar(props) {
 }
 
 export function BottonBar(props) {
+  const timerText = <p> Click <strong>New Game</strong> Botton below to countdown</p>
   const modeText = 'Sorry the Computer vs. User mode is in-progress.';
   const newGameText = <p>Click to <strong>Start a new Game!</strong><br/>(please set the players before starting).</p>;
   const goBackText = <p>Click to go back 1 step</p>;
   return (
     (props.nameEntered) ? (
       <Col className="bottonContainer-right" md="auto">
+        <TipButton 
+          key_="left" value={timerText}
+          onClick={()=>1}
+          name={<p>Time Remain<br/><h2>{props.seconds}</h2></p>}
+          class_="normalButtons" variant="white" size="xxl"
+        />
         <TipButton 
           key_="left" value={modeText}
           onClick={()=>1}

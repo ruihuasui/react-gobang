@@ -9,7 +9,13 @@ export default function App (){
     <Router>
       <div>
         <Navbar bg="light" variant="light">
-          <Navbar.Brand href="/react-gobang/">Gobang</Navbar.Brand>
+          <Navbar.Brand href="/react-gobang/">
+            <img
+              className="logo"
+              href="./images/logo.png"
+            />
+            {' '}Gobang
+          </Navbar.Brand>
           <Nav className="mr-auto">
             <Nav.Link href="/react-gobang/">Gobang</Nav.Link>
             <Nav.Link href="https://ruihuasui.github.io/react-simple2048/">Simple 2048</Nav.Link>
@@ -19,7 +25,6 @@ export default function App (){
             <Button variant="outline-info">Search</Button>
           </Form>
         </Navbar>
-        
         <Route exact path="/react-gobang/" component={GobangPage} />
       </div>
     </Router>

@@ -21,9 +21,14 @@ export default class GobangGame extends Component {
       player1  : 'Player 1',
       player2  : 'Player 2',
       nameEntered : false,
+      seconds  : 60
     }
     this.gameOver = false;
     this.winner = '';
+
+    this.timer = 0;
+    this.startTimer = this.startTimer.bind(this);
+    this.countDown = this.countDown.bind(this);
 
     this._startGame = this._startGame.bind(this);
     this._resetNames = this._resetNames.bind(this);
@@ -34,9 +39,26 @@ export default class GobangGame extends Component {
     this._newGame = this._newGame.bind(this);
     this._goBack = this._goBack.bind(this);
   }
+
+  startTimer() {
+    this.setState({seconds: 60});
+    if (this.timer == 0 && this.state.seconds > 0) {
+      this.timer = setInterval(this.countDown, 1000);
+    }
+  }
+
+  countDown() {
+    // Remove one second, set state so a re-render happens.
+    let seconds = this.state.seconds - 1;
+    if (seconds === -1) return;
+    this.setState({
+      seconds: seconds,
+    });
+  }
   
   _startGame() {
     this.setState({nameEntered: true});
+    this.startTimer();
   }
 
   _setPlayer1Name(event) {
@@ -65,6 +87,7 @@ export default class GobangGame extends Component {
       ]),
       currStep : index,
     });
+    this.startTimer();
   }
 
   _switchPlayer() {
@@ -72,6 +95,7 @@ export default class GobangGame extends Component {
     this.setState({
       firstPlayer : new1stPlayer,
     });
+    this.startTimer();
   }
 
   _newGame() {
@@ -87,12 +111,14 @@ export default class GobangGame extends Component {
     });
     this.gameOver = false;
     this.winner = '';
+    this.startTimer();
   }
 
   _resetNames() {
     this.setState({
       nameEntered : false,
     });
+    this.startTimer();
   }
 
   _goBack() {
@@ -107,6 +133,7 @@ export default class GobangGame extends Component {
       matrix   : matrix_,
       isBlack  : isBlack_,
     });
+    this.startTimer();
   }
 
   render() {
@@ -142,6 +169,7 @@ export default class GobangGame extends Component {
           nameEntered={this.state.nameEntered}
           newGame={this._newGame}
           goBack={this._goBack}
+          seconds={this.state.seconds}
         />
       </Row>
     );

@@ -9,5 +9,14 @@ body {
   color: aliceblue;
 }
 
+.logo {
+  width: 30px;
+  height: 30px;
+  background-image: url('./images/logo.png');
+  display: inline-block;
+  box-align: top;
+  background-attachment: inherit;
+}
+
 
 
