@@ -18,7 +18,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;}
+  justify-content: center;
+  z-index: 1;
+  -webkit-transition: display 600ms;
+  transition: display 600ms;}
+  .bottonContainer-left:double-button {
+    display: none;
+  }
 
 .normalButtons {
   width: 150px;

@@ -172,6 +172,7 @@ export default class GobangGame extends Component {
           updateMatrix={this._updateMatrix}
           gameOver={this.gameOver}
           winner={this.winner}
+          nameEntered={this.state.nameEntered}
         />
         <BottonBar 
           nameEntered={this.state.nameEntered}

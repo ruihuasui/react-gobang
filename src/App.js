@@ -8,7 +8,7 @@ export default function App (){
   return (
     <Router>
       <div>
-        <Navbar bg="light" variant="light">
+        <Navbar bg="light" variant="light" style={{zIndex: 1, boxShadow: '5px 5px 15px black'}}>
           <Navbar.Brand href="/react-gobang/">
             <img
               className="logo"

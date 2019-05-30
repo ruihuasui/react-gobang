@@ -5,6 +5,7 @@
   background: solid #0000003d;
   border: #0000003d solid 10px;
   border-radius: 5px;
+  transition: 300ms linear all;
 }
 
 .box {

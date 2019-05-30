@@ -1,6 +1,6 @@
 import React from 'react';
-import { Jumbotron, Form, Button } from 'react-bootstrap';
-import { TipButton } from './bars.js'
+import { Jumbotron, Form } from 'react-bootstrap';
+import { TipButton } from './bars.js';
 import './wrapper.css';
 
 export function GameOver(props) {
@@ -17,11 +17,10 @@ export function GameOver(props) {
     (<div></div>)
   );
 }
-
 export function InputNameForm(props) {
   const submitTips = <p>Click to submit the names and <strong>Begin the Game!</strong></p>;
   return (
-    <Form>
+    <Form style={{width: '200px'}}>
       <Form.Text >
         <h1 className="icon">Gobang</h1>
       </Form.Text>

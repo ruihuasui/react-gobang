@@ -64,8 +64,9 @@ export default class GobangBoard extends React.Component {
     super(props);
   }
   render() {
+    const rotate_ = this.props.nameEntered ? '0' : '45';
     return (
-        <Col className="board" md="auto">
+        <Col className="board" md="auto" style={{transform: `rotate(${rotate_}deg)`}}>
           <GameOver
             gameOver={this.props.gameOver}
             winner={this.props.winner}

@@ -11,9 +11,11 @@ export function PlayerBar(props) {
                     (props.isBlack ? "-active" : "");
   const p2Active = (p1Active === "-active") ? "" : "-active";
   const firstPlayer = props.firstPlayer ? props.player2 : props.player1;
+  const displayPlayer = (props.nameEntered) ? 'flex' : 'none';
+  const displaySetNames = (props.nameEntered) ? 'none' : 'flex';
   return (
-    (props.nameEntered) ? (
-      <Col className="bottonContainer-left" lg="auto">
+    <div>
+      <Col className="bottonContainer-left" lg="auto" style={{display: displayPlayer}}>
         <Card className="normalCards">
           <Card.Header>
             PLAYERS
@@ -46,8 +48,8 @@ export function PlayerBar(props) {
           </ListGroup>
         </Card>
       </Col>
-    ) : (
-      <Col className="bottonContainer-left" lg="auto">
+      {/* Input name bar */}
+      <Col className="bottonContainer-left" lg="auto" style={{display: displaySetNames}}>
         <InputNameForm 
           setPlayer1Name={props.setPlayer1Name}
           setPlayer2Name={props.setPlayer2Name}
@@ -56,7 +58,8 @@ export function PlayerBar(props) {
           submitNames={props.submitNames}
         />
       </Col>
-    )
+
+    </div>
   );
 }
 
