@@ -15,7 +15,7 @@ Part of the stylesheets is cloned from [classLfz/gomoku-react](https://github.co
 ## Build
 1. clone the repository
 ```
-$ git clone https://github.com/ruihuasui/react-gobang.git react-gobang && cd react-gobang
+$ git clone https://github.com/ruihuasui/react-gobang.git && cd react-gobang
 ```
 2. setup the react packages
 ```
