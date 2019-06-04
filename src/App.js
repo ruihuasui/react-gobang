@@ -9,9 +9,9 @@ export default function App (){
     <Router>
       <div>
         <Navbar bg="dark" variant="dark" className="bar">
-          <Navbar.Brand href="/react-gobang/">
-            <img className="logo"/>
-            {' '}Gobang
+          <Navbar.Brand href="https://ruihuasui.github.io/react-forms/">
+            <img width="30" height="30" src={require('./images/airapp-logo.png')}/>
+            {' '}AirApps
           </Navbar.Brand>
           
           <Nav className="mr-auto">
