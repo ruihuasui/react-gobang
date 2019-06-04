@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/react-gobang/static/css/main.48734a43.chunk.css",
-    "main.js": "/react-gobang/static/js/main.103fa375.chunk.js",
-    "main.js.map": "/react-gobang/static/js/main.103fa375.chunk.js.map",
+    "main.js": "/react-gobang/static/js/main.1cf52bcd.chunk.js",
+    "main.js.map": "/react-gobang/static/js/main.1cf52bcd.chunk.js.map",
     "runtime~main.js": "/react-gobang/static/js/runtime~main.7f7ca634.js",
     "runtime~main.js.map": "/react-gobang/static/js/runtime~main.7f7ca634.js.map",
     "static/js/2.523e0d66.chunk.js": "/react-gobang/static/js/2.523e0d66.chunk.js",
     "static/js/2.523e0d66.chunk.js.map": "/react-gobang/static/js/2.523e0d66.chunk.js.map",
     "index.html": "/react-gobang/index.html",
-    "precache-manifest.ba450dbe0d20034878340cb3e18570c3.js": "/react-gobang/precache-manifest.ba450dbe0d20034878340cb3e18570c3.js",
+    "precache-manifest.7f7ae772f3fa2ea24dacd882ea178a51.js": "/react-gobang/precache-manifest.7f7ae772f3fa2ea24dacd882ea178a51.js",
     "service-worker.js": "/react-gobang/service-worker.js",
     "static/css/main.48734a43.chunk.css.map": "/react-gobang/static/css/main.48734a43.chunk.css.map",
     "static/media/airapp-logo.png": "/react-gobang/static/media/airapp-logo.3699bae0.png"
